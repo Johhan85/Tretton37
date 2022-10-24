@@ -1,13 +1,9 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tretton37.Worker.Models;
 
 namespace Tretton37.Worker.Commands
 {
-    public class GetDataQuery : IRequest<string>
+    public class GetDataQuery : IRequest<Data>
     {
         public GetDataQuery(string path)
         {
